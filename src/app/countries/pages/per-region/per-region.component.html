@@ -1,0 +1,20 @@
+<h3 class="white">Buscar por Región: <small> {{continentSelected | titlecase}} </small></h3>
+<hr>
+
+<h5 class="white">Seleccione la región</h5>
+<div class="row">
+    <div class="col">
+        <button 
+        (click)="activateContinent(continent)" 
+        *ngFor="let continent of continents"
+        [class]="getClass(continent)"
+        >
+            {{continent | titlecase}}
+        </button>
+    </div>
+</div>
+<div *ngIf="countries.length > 0" class="row">
+    <div class="col">
+        <app-countries-table [countries]="countries"></app-countries-table>
+    </div>
+</div>
