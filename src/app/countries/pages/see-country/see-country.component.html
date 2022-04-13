@@ -5,18 +5,18 @@
 <ng-template #divCountry>
     <div class="row">
         <div class="col-12">
-            <h1 class="white">País: <small>{{country.name}}</small></h1>
+            <h1 class="white text-center">País: <small>{{country.name}}</small></h1>
         </div>
     </div>
 
-    <div class="row">
+    <div class="row info-sm">
         <div class="col-4">
-            <h3 class="white">Bandera</h3>
+            <h3 class="white flag-mq">Bandera</h3>
             <img [src]="country.flag" class="img-thumbnail">
         </div>
 
         <div class="col">
-            <h3 class="white">Información</h3>
+            <h3 class="white info-mq">Información</h3>
             <ul class="list-group">
                 <li class="list-group-item">
                     <strong>Región:</strong> {{country.subregion}}

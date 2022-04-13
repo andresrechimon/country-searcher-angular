@@ -1,0 +1,12 @@
+@media (max-width: 415px) {
+    .flag-mq{
+        visibility: hidden;
+    }
+    .info-mq{
+        visibility: hidden;
+    }
+    .info-sm{
+        position: relative; 
+        top: -45px;
+    }
+}

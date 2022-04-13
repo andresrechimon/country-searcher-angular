@@ -11,3 +11,8 @@ body{
 .white{
     color: aliceblue;
 }
+@media (max-width: 415px) {
+    h2{
+        display: none;
+    }
+}
